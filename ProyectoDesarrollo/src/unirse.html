@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Unirse a una Sala</title>
+</head>
+
+<body>
+
+<div class="stars"></div>
+<div class="container">
+    <h1>Unirse a una Sala</h1>
+    <div class="room-info">
+        <form>
+            <div class="form-group">
+                <h1><label for="codigo">Código:</label></h1>
+                <input type="text" id="codigo" name="codigo" required>
+            </div>
+            <p></p>
+            <button type="submit">Unirse a la Sala</button>
+            <p></p>
+        </form>
+    </div>
+    <div class="button-container">
+        <button id="index-button">Volver al Menú</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("index-button").addEventListener("click", function() {
+        window.location.href = "../index.html";
+    });
+</script>
+
+</body>
+</html>

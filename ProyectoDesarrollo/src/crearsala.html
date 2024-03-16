@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Sala de Juegos Privada</title>
+</head>
+
+<body>
+
+<div class="stars"></div>
+<div class="container">
+    <h1>Crear Sala de Juego</h1>
+    <div class="form-group">
+
+        <select id="avatar" name="avatar" required>
+            <option value="">Seleccionar avatar...</option>
+            <option value="avatar1">Avatar 1</option>
+            <option value="avatar2">Avatar 2</option>
+            <option value="avatar3">Avatar 3</option>
+        </select>
+    </div>
+    <div class="room-info">
+        <form>
+            <div class="form-group">
+                <h1><label for="nombre">Nombre:</label></h1>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <h1><label for="clave">Clave:</label></h1>
+                <input type="password" id="clave" name="clave" required>
+            </div>
+            
+            <p></p>
+            <button type="submit">Crear Sala</button>
+        </form>
+    </div>
+    <p></p>
+    <div class="button-container">
+        <button id="index-button">Volver al Menú</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("index-button").addEventListener("click", function() {
+        window.location.href = "../index.html";
+    });
+</script>
+
+</body>
+</html>
