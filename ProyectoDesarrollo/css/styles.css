@@ -46,6 +46,11 @@ button:hover {
   transform: scale(1.1);
 }
 
+.imagenp{
+  width: 150px;
+  height: 150px;
+}
+
 .stars {
   position: absolute;
   width: 100%;

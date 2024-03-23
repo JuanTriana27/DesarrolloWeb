@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
-    <title>Sala de Juegos Privada</title>
+    <link rel="icon" type="image/png" href="img/lapiz.png">
+    <title> Pintando Ando</title>
 </head>
 
 <body>
@@ -15,21 +16,17 @@
     <div class="form-group">
 
         <select id="avatar" name="avatar" required>
-            <option value="">Seleccionar avatar...</option>
+            <option value="" required>Seleccionar avatar...</option>
             <option value="avatar1">Avatar 1</option>
             <option value="avatar2">Avatar 2</option>
             <option value="avatar3">Avatar 3</option>
         </select>
     </div>
     <div class="room-info">
-        <form>
+        <form id="crearSalaForm">
             <div class="form-group">
-                <h1><label for="nombre">Nombre:</label></h1>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <div class="form-group">
-                <h1><label for="clave">Clave:</label></h1>
-                <input type="password" id="clave" name="clave" required>
+                <h1><label for="clave">Codigo:</label></h1>
+                <input type="password" id="codigo" name="clave" required>
             </div>
             
             <p></p>
@@ -46,7 +43,11 @@
     document.getElementById("index-button").addEventListener("click", function() {
         window.location.href = "../index.html";
     });
-</script>
 
+    document.getElementById("crearSalaForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        window.location.href = "juego.html";
+    });
+</script>
 </body>
 </html>
