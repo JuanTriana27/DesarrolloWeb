@@ -1,39 +1,35 @@
-/* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilos del body */
 body {
+  font-family: 'Arial', sans-serif;
   background-color: #182c47;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  position: relative; /* Para posicionar las estrellas */
+  position: relative;
 }
 
-/* Estilos del canvas */
 canvas {
-  width: 600px; /* Nuevo ancho del canvas */
-  height: 500px; /* Nuevo alto del canvas */
+  width: 600px;
+  height: 500px;
   border: 2px solid #4682b4;
   background-color: #fff;
   cursor: crosshair;
-  margin: 20px; /* Espacio alrededor del canvas */
+  margin: 20px;
 }
 
-/* Estilos de los controles */
 .controls {
-  position: absolute; /* Posicionamiento absoluto */
-  top: 20px; /* Distancia desde arriba */
-  right: 20px; /* Distancia desde la derecha */
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
-/* Estilos de los botones */
 button {
   padding: 5px 10px;
   border: none;
@@ -48,29 +44,25 @@ button:hover {
   transform: scale(1.1);
 }
 
-/* Estilos del chat */
 .chat-container {
+  font-family: 'Arial', sans-serif;
   position: absolute;
   top: 20px;
   left: 20px;
   text-align: left;
-  color: #fff; /* Color del texto del chat */
-}
-
-/* Estilos del mensaje de la palabra */
-.chat-word {
-  color: #fff; /* Color blanco */
-}
-
-
-/* Estilos del temporizador */
-.timer-container {
-  position: absolute; /* Posicionamiento absoluto */
-  bottom: 20px; /* Distancia desde abajo */
   color: #fff;
 }
 
-/* Estilos de las estrellas */
+.chat-word {
+  color: #fff;
+}
+
+.timer-container {
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+}
+
 .stars {
   position: absolute;
   width: 100%;
@@ -82,7 +74,6 @@ button:hover {
   animation: starsAnimation 50s linear infinite;
 }
 
-/* Animación de las estrellas */
 @keyframes starsAnimation {
   from {
     background-position: 0 0;

@@ -1,12 +1,11 @@
 window.onload = function() {
     const canvas = document.getElementById('canvas');
     const context = canvas.getContext('2d');
-
     let isDrawing = false;
     let lastX = 0;
     let lastY = 0;
     let timerInterval;
-    let score = 0; //Almacenar puntos
+    let score = 0;
 
     canvas.addEventListener('mousedown', (event) => {
         isDrawing = true;
@@ -61,9 +60,8 @@ window.onload = function() {
         chatMessages.appendChild(messageDiv);
         chatMessages.scrollTop = chatMessages.scrollHeight;
 
-        // Verificar si el mensaje coincide con la palabra actual
         if (message.toLowerCase() === document.getElementById('randomWord').textContent.toLowerCase()) {
-            score += 20; // Sumar 20 puntos
+            score += 20;
             alert('¡Ganaste 20 puntos!');
             console.log('Score:', score);
         }
@@ -74,15 +72,12 @@ window.onload = function() {
         return words[Math.floor(Math.random() * words.length)];
     }
 
-    // Función para actualizar la palabra actual
-function updateRandomWord() {
-    currentWord = getRandomWord();
-    const randomWordElement = document.getElementById('randomWord');
-    randomWordElement.textContent = currentWord;
-    randomWordElement.classList.add('chat-word'); // Agregar la clase
-}
-
-
+    function updateRandomWord() {
+        currentWord = getRandomWord();
+        const randomWordElement = document.getElementById('randomWord');
+        randomWordElement.textContent = currentWord;
+        randomWordElement.classList.add('chat-word');
+    }
 
     function updateTimer() {
         const timerElement = document.getElementById('timer');
