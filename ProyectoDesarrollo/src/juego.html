@@ -9,7 +9,21 @@
 </head>
 <body>
     <div class="stars"></div>
-    <canvas id="canvas" width="800" height="600"></canvas>
+    <div class="word-container">
+        <h2><span id="randomWord"></span></h2>
+    </div>
+    <div class="chat-container">
+        <h2>Chat:</h2>
+        <div id="chatMessages" class="chat"></div>
+        <form id="chatForm">
+            <input type="text" id="messageInput" placeholder="Escribe un mensaje...">
+            <button type="submit" id="sendButton">Enviar</button>
+        </form>
+    </div>
+    <div class="timer-container">
+        <h2><span id="timer">60</span></h2>
+    </div>
+    <canvas id="canvas" width="600" height="500"></canvas>
     <div class="controls">
         <input type="color" id="colorPicker" value="#ffffff">
         <button id="clearButton">Borrar</button>
